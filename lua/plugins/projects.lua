@@ -9,7 +9,6 @@ return {
           dev = {
             "~/Projects",
             "~/org",
-            "~/llama.cpp",
           },
 
           -- Files/directories that identify the root of a project
