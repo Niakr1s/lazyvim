@@ -8,7 +8,7 @@ return {
           -- Directories where Snacks will look for projects
           dev = {
             "~/Projects",
-            "~/work",
+            "~/org",
             "~/llama.cpp",
           },
 
