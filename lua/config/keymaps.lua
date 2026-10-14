@@ -2,6 +2,13 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
+-- Name the <leader>t group in Which-Key
+pcall(function()
+  require("which-key").add({
+    { "<leader>t", group = "terminal" },
+  })
+end)
+
 -- Terminal in new tab: root dir
 vim.keymap.set("n", "<leader>tt", function()
   local root = LazyVim.root.get() or vim.fn.getcwd()
