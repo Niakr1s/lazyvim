@@ -3,3 +3,15 @@
 -- Add any additional options here
 
 vim.g.autoformat = false
+
+vim.lsp.config('*', {
+  capabilities = {
+    textDocument = {
+      completion = {
+        completionItem = {
+          snippetSupport = false,
+        }
+      }
+    }
+  }
+})
