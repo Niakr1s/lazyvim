@@ -18,3 +18,11 @@ vim.api.nvim_create_autocmd("TermOpen", {
     end
   end,
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+  group = vim.api.nvim_create_augroup("UserDisableSpell", { clear = true }),
+  pattern = "*",
+  callback = function()
+    vim.opt_local.spell = false
+  end,
+})
