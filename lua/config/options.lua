@@ -5,6 +5,7 @@
 vim.g.autoformat = false
 vim.opt.number = true
 vim.opt.relativenumber = false
+vim.opt.wrap = true
 
 vim.lsp.config('*', {
   capabilities = {
