@@ -25,7 +25,6 @@ vim.keymap.set("n", "<leader>tT", function()
 end, { desc = "Terminal (cwd)" })
 
 -- Remove LazyVim's default split keymaps
-vim.keymap.del("n", "<leader>-") -- removes horizontal split
 vim.keymap.del("n", "<leader>|") -- removes vertical split
 
 -- Set new split keymaps to match tmux
