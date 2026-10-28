@@ -26,7 +26,3 @@ end, { desc = "Terminal (cwd)" })
 
 -- Remove LazyVim's default split keymaps
 vim.keymap.del("n", "<leader>|") -- removes vertical split
-
--- Set new split keymaps to match tmux
-vim.keymap.set("n", "%", "<Cmd>vsplit<CR>", { desc = "Split window vertically (tmux style)" })
-vim.keymap.set("n", '"', "<Cmd>split<CR>", { desc = "Split window horizontally (tmux style)" })
