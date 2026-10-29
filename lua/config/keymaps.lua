@@ -26,3 +26,7 @@ end, { desc = "Terminal (cwd)" })
 
 -- Remove LazyVim's default split keymaps
 vim.keymap.del("n", "<leader>|") -- removes vertical split
+
+vim.keymap.set("i", "<M-Tab>", function()
+  require("cmp").complete()
+end, { desc = "Manually trigger completion" })
