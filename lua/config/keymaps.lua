@@ -30,3 +30,9 @@ vim.keymap.del("n", "<leader>|") -- removes vertical split
 vim.keymap.set("i", "<M-Tab>", function()
   require("cmp").complete()
 end, { desc = "Manually trigger completion" })
+
+-- Split right
+vim.keymap.set("n", "<leader>w\"", "<cmd>vsplit<cr>", { desc = "Split right" })
+
+-- Split down
+vim.keymap.set("n", "<leader>w%", "<cmd>split<cr>", { desc = "Split down" })
